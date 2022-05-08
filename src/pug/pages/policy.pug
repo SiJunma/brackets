@@ -1,0 +1,40 @@
+extends ../layout/layout.pug
+
+block header
+  header.default-header 
+    .container    
+      .default-header__offer 
+        .default-header__offer-title
+          h1 Privacy Rights Policy
+        .default-header__offer-upd 
+          span Updated March, 2022
+
+  section.breadcrumbs 
+    .container 
+      .breadcrumbs__list 
+        ul 
+          li: a(href="index.html") Home
+          li: a.current Privacy Rights Policy
+
+block content
+  .container 
+    .generalContent__wrapper
+      section.generalContent
+        article.article 
+          h3.title-underline Privacy notice for california residents
+          p Consumers residing in California have additional rights with respect to their personal information under the California Consumer Privacy Act (“CCPA”).  If you are a California resident, this section applies to you and supplements our <a href="#">main privacy policy</a>.
+          p The DreamCloud and DreamCloud Premier consist of 5 and 6 layers respectively, including the covers and their latest offering, the DreamCloud Premier Rest offers a luxurious 7 layers.
+
+          h4 Categories of Personal Information Collected.
+
+          p We collect the categories of “Personal information” as that term is explained in more detail in the <a href="#">main privacy policy</a>, including the following:
+          ul 
+            li Identifiers, such as name, email addresses, and billing and shipping address for online purchases.
+            li Categories of personal information described in the California Customer Records statute (California Civil Code Section 1798.80), including physical characteristics (size) and payment information.
+            li Certain commercial information, including purchasing habits.
+            li Internet and other similar network activity, such as browsing history.
+            li Geolocation data.
+            li Inferences drawn from the above information to create consumer profiles reflecting certain preferences and behaviors.
+
+      aside.side-bar.side-bar_right#side-bar-review
+        include ../includes/top5.pug 

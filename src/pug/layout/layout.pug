@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    
+    block head
+        include ../includes/head.pug
+
+    body 
+      block nav
+        include ../includes/nav.pug
+
+      block header
+
+      main 
+        block content
+
+      block footer
+        include ../includes/foot.pug
+
+      block modals
+        - let $modalId= 'disclosure'
+        include ../includes/modal-disclosure.pug 
+
+        - $modalId= 'mainModal'
+        //- include ../includes/modal-main.pug
+
+      block scripts 
+        script(src="js/script.js") 
+
+      
+

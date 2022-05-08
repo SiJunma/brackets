@@ -1,0 +1,77 @@
+section.slider-bottom#bottomSliderTop
+    .container
+      .splide.slider-bottom__list
+        .splide__track
+          ul.splide__list
+            mixin slider-card($val, $badge, $firm, $logo, $rank, $rankText)
+                .slider-bottom__item.slider-card
+                  .main-card__val= $val
+                  
+                  .slider-card__lft
+                    if $badge
+                      .main-card__badge=$badge
+                    .slider-card__logo
+                      a(href='#logo'): img(src=$logo alt=$firm)
+                    a.link.link-arrow(href="#") Read Review
+                  .slider-card__rgt
+                    .slider-card__rank.card-rank
+                      span.card-rank__value= $rank 
+                      span.card-rank__text= $rankText
+                      .card-rank__stars 
+                        span.star.star_full
+                        span.star.star_full
+                        span.star.star_full
+                        span.star.star_half
+                        span.star.star_empty
+                    a(href="#shop").btn Shop now
+
+            li.splide__slide  
+              +slider-card('1', 'Editors Choice', 'GhostBed', 'img/logo1.png', '9.5', 'Excellent')
+            li.splide__slide
+              +slider-card('2','Best Overall', 'DreamCloud', 'img/logo2.png', '9.5', 'Exellent')
+            li.splide__slide
+              +slider-card('3','', 'Nectar', 'img/logo3.png', '9.5', 'Exellent')
+            li.splide__slide                
+              +slider-card('4','', 'Puffy', 'img/logo4.png', '9.5', 'Exellent')
+            li.splide__slide
+              +slider-card('5','', 'Cocoon', 'img/logo5.png', '9.5', 'Exellent')
+            li.splide__slide
+              +slider-card('6','', 'Premier by Nectar', 'img/logo6.png', '9.5', 'Exellent')
+            li.splide__slide
+              +slider-card('7','', 'Layla', 'img/logo7.png', '9.5', 'Exellent')
+            li.splide__slide
+              +slider-card('8','', 'Awara', 'img/logo8.png', '9.5', 'Exellent')
+            li.splide__slide
+              +slider-card('9','', 'Level sleep', 'img/logo9.png', '9.5', 'Exellent')
+            li.splide__slide
+              +slider-card('10','', 'PlushBeds', 'img/logo10.png', '9.5', 'Exellent')
+
+        .splide__arrows
+          button.splide__arrow.splide__arrow--prev
+          button.splide__arrow.splide__arrow--next
+
+section.topButton 
+    .container 
+      a.topButton__link(href='#') Up to top
+
+footer.footer 
+  .container 
+    .row 
+      .col-md-2 
+        a(href="index.html").footer__logo: img(src="img/logo-brand.svg", alt="Logo")
+      .col-md-10 
+        .footer__links 
+          ul 
+            li: a(href="#") Terms
+            li: a(href="policy.html") Privacy Policy
+            li: a(href="#") Privacy Rights Policy
+            li: a(href="#") Disclaimer
+            li: a(href="#") Contact
+            li: a(href="#") About
+    .row 
+      .col-md-8.col-lg-5
+        .footer__desc   
+          p Condimentum lorem facilisis velit id ut risus rhoncus elit. Sit nunc, enim convallis diam massa sed lobortis cras. Ultricies egestas lorem duis bibendum dolor quam. 
+      .col-md-4.col-lg-7 
+        .footer__copy 
+          p © 2022 All Rights Reserved

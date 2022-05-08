@@ -1,0 +1,26 @@
+.side-bar__block.side-bar__block_top
+  .side-bar__block-title Best Invisible Braces
+  .side-bar__block-content
+
+    mixin top-card($firm, $logo, $rank)
+      .top-box__item 
+        .top-box__left 
+          a(href="#").top-box__logo: img(src=$logo alt=$firm)
+          .card-rank.top-box__rank
+            span.card-rank__value= $rank 
+            .card-rank__stars 
+              span.star.star_full
+              span.star.star_full
+              span.star.star_full
+              span.star.star_half
+              span.star.star_empty
+
+        .top-box__right
+          a(href="#shop").btn Shop now
+          a.link.link-arrow(href="#") Read Review
+
+    +top-card('GhostBed', 'img/logo1-2.png', '9.9')
+    +top-card('DreamCloud', 'img/logo2.png', '9.8')
+    +top-card('Nectar', 'img/logo3.png', '9.7')
+    +top-card('Puffy', 'img/logo4.png', '9.6')
+    +top-card('Cocoon', 'img/logo5.png', '9.5')

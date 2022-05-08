@@ -1,0 +1,16 @@
+extends ../layout/modal.pug
+
+block modal-content
+  .modal-main__bg 
+    img(src="img/modals/modal-main-bg.webp").modal-main__bg-img
+
+    a(href="#logo").modal-main__bg-logo 
+      img(src="img/modals/modal-main-logo.webp")
+  
+  .modal-main__content
+    .offer-line_big 
+      p Get $200 OFF +
+    .offer-line_small 
+      p $499 in Accessories Included
+
+    a(href="#shop").btn.btn-primary Shop now

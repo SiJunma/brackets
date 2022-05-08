@@ -1,0 +1,104 @@
+$header-bg: linear-gradient(90deg, #465FB4 0%, #33B6FF 100%), #FFFFFF;
+
+.main-header {
+  background: $header-bg;
+  padding-top: 48px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 0;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: '';
+    display: block;
+    background-image: url('../img/header-img.png');
+    transform: scaleX(-1);
+    width: 173px;
+    height: 114px;
+    background-size: contain;
+    background-position: top left -19px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (min-width: 375px) {
+      background-position: top left -20px;
+      height: 140px;
+    }
+
+    @media screen and (min-width: 471px) {
+      background-position: top left -5px;
+      height: 140px;
+    }
+  }
+
+  &__offer {
+    text-align: left;
+    padding: 0 5px;
+    color: #FFFFFF;
+
+    h1 {
+        margin-bottom: 6px;
+        margin-top: 0;
+        color: #FFFFFF;
+    }
+
+    a {
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+
+    &-title {
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+        
+        margin-bottom: 9px;
+
+        @media screen and (min-width: 471px) {
+          padding-right: 160px;
+        }
+    }
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+
+    &-desc {
+      display: none;
+
+      &_mobile {
+        font-size: 14px;
+        margin-bottom: 14px;
+        padding-right: 80px;
+
+        @media screen and (min-width: 375px) {
+          padding-right: 120px;
+        }
+
+        @media screen and (min-width: 471px) {
+          padding-right: 160px;
+        }
+
+        & > *:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  } 
+
+  &__upd {
+    width: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    color: #72E5FE;
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 14px;
+    margin-top: auto;
+  }  
+}
