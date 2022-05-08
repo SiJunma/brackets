@@ -152,6 +152,12 @@ h6 {
         padding-top: 60px;
         padding-bottom: 70px;
     }
+
+    &-wrapper {
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .logo {
