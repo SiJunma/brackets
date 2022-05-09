@@ -101,3 +101,13 @@ $header-bg: linear-gradient(90deg, #465FB4 0%, #33B6FF 100%), #FFFFFF;
     margin-top: auto;
   }  
 }
+
+.default-header {
+  &__offer-title {
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 50px;
+  }
+}

@@ -637,6 +637,10 @@
     }
   }
 
+  .default-header {
+    padding-top: 35px;
+  }
+
   .breadcrumbs {
     margin-bottom: 25px;
   }
@@ -872,6 +876,7 @@
 
     &__bg-wrapper {
       display: block;
+      z-index: -1;
     }
 
     &_main {
@@ -1008,6 +1013,7 @@
 
     &__default {
       padding-top: 0;
+      margin-bottom: 80px;
     }
 
     .article {

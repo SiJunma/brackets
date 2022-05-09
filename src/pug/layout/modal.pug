@@ -1,5 +1,16 @@
 if $modalClass
   .modal(id=`${$modalId}` class=`${$modalClass}` tabindex='-1' role='dialog')
+    .modal-backdrop
+    .modal-dialog(role='document')
+      .modal-content
+
+        .modal-header
+          block modal-header
+          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+
+        .modal-body
+          block modal-content
+          
 else 
   .modal(id=`${$modalId}` tabindex='-1' role='dialog')
     .modal-backdrop

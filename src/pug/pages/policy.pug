@@ -1,40 +1,55 @@
 extends ../layout/layout.pug
 
 block header
-  header.default-header 
-    .container    
-      .default-header__offer 
-        .default-header__offer-title
-          h1 Privacy Rights Policy
-        .default-header__offer-upd 
-          span Updated March, 2022
 
-  section.breadcrumbs 
-    .container 
-      .breadcrumbs__list 
-        ul 
-          li: a(href="index.html") Home
-          li: a.current Privacy Rights Policy
 
 block content
-  .container 
-    .generalContent__wrapper
-      section.generalContent
-        article.article 
-          h3.title-underline Privacy notice for california residents
-          p Consumers residing in California have additional rights with respect to their personal information under the California Consumer Privacy Act (“CCPA”).  If you are a California resident, this section applies to you and supplements our <a href="#">main privacy policy</a>.
-          p The DreamCloud and DreamCloud Premier consist of 5 and 6 layers respectively, including the covers and their latest offering, the DreamCloud Premier Rest offers a luxurious 7 layers.
+  .main-content.default
+    .container 
+      .main-content__wrapper
+        aside.side-bar.side-bar_right#side-bar-review
+          include ../includes/top5.pug 
 
-          h4 Categories of Personal Information Collected.
+        section.main-content__default 
 
-          p We collect the categories of “Personal information” as that term is explained in more detail in the <a href="#">main privacy policy</a>, including the following:
-          ul 
-            li Identifiers, such as name, email addresses, and billing and shipping address for online purchases.
-            li Categories of personal information described in the California Customer Records statute (California Civil Code Section 1798.80), including physical characteristics (size) and payment information.
-            li Certain commercial information, including purchasing habits.
-            li Internet and other similar network activity, such as browsing history.
-            li Geolocation data.
-            li Inferences drawn from the above information to create consumer profiles reflecting certain preferences and behaviors.
+          section.breadcrumbs 
+            .breadcrumbs__list 
+              ul 
+                li: a(href="index.html") Home
+                li: a.current Privacy Rights Policy
 
-      aside.side-bar.side-bar_right#side-bar-review
-        include ../includes/top5.pug 
+          header.default-header 
+            .default-header__offer-title
+              h1 Privacy Rights Policy
+
+          article.article 
+            .article-wrapper
+              h2 GENERAL
+              p Consumers residing in California have additional rights with respect to their personal information under the California Consumer Privacy Act (“CCPA”).  If you are a California resident, this section applies to you and supplements our <a href="#">main privacy policy</a>.
+              p The Website is hosted in the United States of America and is subject to U.S. state and federal law. If you are accessing our Website from other jurisdictions, please be advised that you are transferring your personal information to us in the United States, and by using our Website, you consent to that transfer and use of your personal information in accordance with this Privacy Policy. You also agree to abide by the applicable laws of applicable states and U.S. federal law concerning your use of the Website and your agreements with us. Any persons accessing our Website from any jurisdiction with laws or regulations governing the use of the Internet, including personal data collection, use and disclosure, different from those of the jurisdictions mentioned above may only use the Website in a manner lawful in their jurisdiction. If your use of the Website would be unlawful in your jurisdiction, please do not use the Website. This Privacy Policy was generated using Legal Templates’s Privacy Policy Generator.
+              p BY USING OR ACCESSING THE WEBSITE, YOU ARE ACCEPTING THE PRACTICES DESCRIBED IN THIS PRIVACY POLICY.
+
+              h3 GATHERING, USE AND DISCLOSURE OF NON-PERSONALLY-IDENTIFYING INFORMATION
+
+              h4 Users of the Website Generally
+
+              p “Non-Personally-Identifying Information” is information that, without the aid of additional information, cannot be directly associated with a specific person. “Personally-Identifying Information,” by contrast, is information such as a name or email address that, without more, can be directly associated with a specific person. Like most website operators, Company gathers from users of the Website Non-Personally-Identifying Information of the sort that Web browsers, depending on their settings, may make available. That information includes the user’s Internet Protocol (IP) address, operating system, browser type and the locations of the websites the user views right before arriving at, while navigating and immediately after leaving the Website. Although such information is not Personally-Identifying Information, it may be possible for Company to determine from an IP address a user’s Internet service provider and the geographic location of the visitor’s point of connectivity as well as other statistical usage data. Company analyzes Non-Personally-Identifying Information gathered from users of the Website to help Company better understand how the Website is being used. By identifying patterns and trends in usage, Company is able to better design the Website to improve users’ experiences, both in terms of content and ease of use. From time to time, Company may also release the Non-Personally-Identifying Information gathered from Website users in the aggregate, such as by publishing a report on trends in the usage of the Website.
+
+              h4 Web Cookies
+
+              p We collect the categories of “Personal information” as that term is explained in more detail in the <a href="#">main privacy policy</a>, including the following:
+              ul 
+                li Identifiers, such as name, email addresses, and billing and shipping address for online purchases.
+                li Categories of personal information described in the California Customer Records statute (California Civil Code Section 1798.80), including physical characteristics (size) and payment information.
+                li Certain commercial information, including purchasing habits.
+                li Internet and other similar network activity, such as browsing history.
+                li Geolocation data.
+                li Inferences drawn from the above information to create consumer profiles reflecting certain preferences and behaviors.
+
+              h4 Financing Available
+              p Byte’s treatment costs are upfront. You can pay the costs all in one go, or you can sign up for monthly payments that make these aligners simple and affordable.
+
+              h4 Third-Party Advertisers
+              p We may use third-party advertising companies to serve ads when you visit the Website. These companies may use information (not including any Personally-Identifying Information) about your visits to the Website and other websites that are contained in Web Cookies in order to provide advertisements about goods and services of interest to you. Using a tool created by the Network Advertising Initiative, you can opt out of several third-party ad servers’ and networks’ Web Cookies simultaneously. If you would like more information about this practice and to know your choices about not having this information used by these companies, please follow the following links: <a href="http://networkadvertising.org/managing/opt_out.asp">networkadvertising.org</a>, <a href="http://preferences-mgr.truste.com/">preferences-mgr.truste.com</a>, or <a href="http://www.aboutads.info/choices/">aboutads.info</a>. Please contact us if you would like to know the identity of the third-party advertising companies we are currently using to serve ads.
+
+              p We may allow advertisers to choose the characteristics of users who will see their advertisements, and we may use any of the Non-Personally Identifying Information we have collected (including information you may have decided not to show to other users, such as your birth year or other sensitive personal information or preferences) to select the appropriate audience for those advertisements. We do not identify you to the advertiser.

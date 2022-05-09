@@ -1,16 +1,29 @@
 extends ../layout/modal.pug
 
 block modal-content
-  .modal-main__bg 
-    img(src="img/modals/modal-main-bg.webp").modal-main__bg-img
+  .modal-main
+    .modal-main__wrapper 
+      .modal-main__col.first
+        .modal-main__logo 
+          a(href="#logo"): img(src="img/modals/modal-main__logo1.png", alt="logo")
+        .modal-main__offer-big 
+          span 84% Off
+        .modal-main__offer-regular 
+          span Impression Kit + $100 off Aligners
+        
+      .modal-main__col.second
+        .modal-main__logo 
+          a(href="#logo"): img(src="img/modals/modal-main__logo2.png", alt="logo")
+        .modal-main__offer-big 
+          span $18 kit
+        .modal-main__offer-regular 
+          span Free with return <br> Use Code: Save2Smile
+    
+    .modal-main__image 
+      img(src="img/modals/modal-main__image.png", alt="image")
 
-    a(href="#logo").modal-main__bg-logo 
-      img(src="img/modals/modal-main-logo.webp")
-  
-  .modal-main__content
-    .offer-line_big 
-      p Get $200 OFF +
-    .offer-line_small 
-      p $499 in Accessories Included
+    .modal-main__wrapper.cta-box
+      .modal-main__col.first: a(href="#shop").btn.btn-primary Shop now
+      .modal-main__col.second: a(href="#shop").btn.btn-primary Shop now
 
-    a(href="#shop").btn.btn-primary Shop now
+    
