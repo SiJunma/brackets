@@ -3,3 +3,5 @@
 /src/.htaccess
 /build/.htaccess
 /design/*
+/src/img/brands/*
+/build/img/brands/*
