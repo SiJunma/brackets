@@ -34,6 +34,10 @@
   }
 
   .main-header {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    
     &::after {
       width: 197px;
       height: 160px;
@@ -52,7 +56,13 @@
       }
     }
 
+    &__upd {
+      margin-top: 0;
+    }
+
     &__offer-title {
+      margin: 0;
+
       @media screen and (min-width:650px) {
         padding-right: 0;
       }
@@ -64,6 +74,9 @@
 
     &__offer {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 9px;
       
       &::before {
         background-image: url("data:image/svg+xml,%3Csvg width='7' height='64' viewBox='0 0 7 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.6' width='1' height='64' fill='%2372E5FE'/%3E%3Crect opacity='0.6' x='6' y='11' width='1' height='42' fill='%2372E5FE'/%3E%3C/svg%3E%0A");
@@ -301,7 +314,7 @@
 
       grid-area: logo;
       img {
-        max-width: 150px;
+        max-width: 105px;
         max-height: 100px;
       }
     }
@@ -417,6 +430,10 @@
       }
     }
 
+    .main-card__link-mob {
+      display: none;
+    }
+
     &__val {
       width: 40px;
       height: 36px;
@@ -427,10 +444,17 @@
       font-size: 14px
     }
 
+    &__logo {
+      margin-bottom: auto;
+    }
+
     &__logo-box {
       clip-path: unset;
       background: transparent;
       padding-left: 20px;
+      width: 30%;
+      min-width: 200px;
+      padding-right: 5px;
     }
 
     &__details-box {
@@ -460,12 +484,6 @@
     &__cta-wrapper {
       display: flex;
       align-items: flex-end;
-    }
-
-    &__logo-box {
-      width: 30%;
-      min-width: 200px;
-      padding-right: 5px;
     }
 
     &__details-list {
@@ -588,7 +606,7 @@
 
       &__content-box {
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
         margin: auto 0;
         flex-grow: 1;
 
@@ -613,7 +631,7 @@
           &__offer {
             margin-bottom: 0;
             grid-area: offer;
-            
+            padding-right: 10px;
           }
 
           &__ranked {
@@ -822,6 +840,10 @@
       display: flex;
       align-items: center;
 
+      img {
+        max-width: 150px;
+      }
+
       &::after {
         background-image: url("data:image/svg+xml,%3Csvg width='7' height='64' viewBox='0 0 7 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.6' width='1' height='64' fill='%2372E5FE'/%3E%3Crect opacity='0.6' x='6' y='11' width='1' height='42' fill='%2372E5FE'/%3E%3C/svg%3E%0A");
         display: block;
@@ -869,52 +891,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .nav {
-    position: relative;
-    background: transparent;
-
-    &__bg-wrapper {
-      display: block;
-      z-index: -1;
-    }
-
-    &_main {
-      position: absolute;
-      
-      .nav__wrapper {
-        padding-left: calc(230px + 40px);
-      }
-    }
-
-    &__bg {
-      background: $header-bg;
-      height: 100%;
-      width: calc(50vw + 50% + 75px);
-      position: absolute;
-      top: 0;
-      left: -75px;
-      right: 0;
-      z-index: -1;
-      overflow: hidden;
-      border-radius: 0px 0px 0px 100px;
-
-      &-wrapper {
-        position: absolute;
-        height: 100%;
-        top: 0;
-        width: 100%;
-        flex-grow: 1;
-
-        .container {
-          position: relative;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
-    
+@media screen and (min-width: 1200px) {   
   .main-header {
     min-height: 236px;
     padding-top: 53px;
@@ -991,6 +968,7 @@
     flex-shrink: 0;
     flex-grow: 1;
     margin-bottom: 98px;
+    width: 50%;
   }
 
   .main-card {
@@ -1009,6 +987,7 @@
       display: flex;
       padding-top: 50px;
       flex-direction: row;
+      column-gap: 40px;
     }
 
     &__default {
@@ -1165,7 +1144,6 @@
     }
 
     &_left {
-      margin-right: 40px;
       width: 230px;
       margin-left: 0;
     }
@@ -1206,6 +1184,52 @@
 }
 
 @media screen and (min-width: 1400px) {
+  .nav {
+    position: relative;
+    background: transparent;
+
+    &__bg-wrapper {
+      display: block;
+      z-index: -1;
+    }
+
+    &_main {
+      position: absolute;
+
+      .nav__wrapper {
+        padding-left: calc(230px + 40px);
+      }
+    }
+
+    &__bg {
+      background: $header-bg;
+      height: 100%;
+      width: calc(50vw + 50% + 75px);
+      position: absolute;
+      top: 0;
+      left: -75px;
+      right: 0;
+      z-index: -1;
+      overflow: hidden;
+      border-radius: 0px 0px 0px 100px;
+
+      &-wrapper {
+        overflow: hidden;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+        flex-grow: 1;
+
+        .container {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  
   .slider-bottom {
     &__list {
      max-width: 1100px;
