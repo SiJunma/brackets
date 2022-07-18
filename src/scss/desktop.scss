@@ -46,12 +46,25 @@
     &__offer-desc {
       display: block;
       padding-right: 125px;
+      line-height: 140%;
 
       @media screen and (min-width:650px) {
         padding-right: 105px;
       }
 
       & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__offer-discl {
+      padding-right: 125px;
+      
+      @media screen and (min-width:650px) {
+        padding-right: 105px;
+      }
+    
+      &>*:last-child {
         margin-bottom: 0;
       }
     }
@@ -420,6 +433,10 @@
     }
   }
 
+  .main-header__offer-discl {
+    font-size: 14px;
+  }
+
   .main-card {
     border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.03);
@@ -660,6 +677,12 @@
     padding-top: 35px;
   }
 
+  .review-discl {
+    margin-top: 8px;
+    margin-bottom: 33px;
+    font-size: 14px;
+  }
+
   .breadcrumbs {
     margin-bottom: 25px;
   }
@@ -689,6 +712,20 @@
     &::after {
       width: 272px;
       height: 221px;
+    }
+
+    &__offer-desc,
+    &__offer-discl {
+      padding-right: 205px;
+    }
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .main-header {
+    &__offer-desc,
+    &__offer-discl {
+      padding-right: 155px;
     }
   }
 }

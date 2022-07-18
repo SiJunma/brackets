@@ -110,6 +110,23 @@
   }
 }
 
+.review-discl {
+  color: #A8A8A8;
+  font-weight: 400;
+  font-size: 11px;
+  margin-top: -35px;
+  margin-bottom: 45px;
+
+  a {
+    font-weight: 400;
+    color: #A8A8A8;
+  }
+
+  &>*:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .top-box {
   &__item {
       display: flex;
